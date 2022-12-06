@@ -19,8 +19,8 @@ print("I have a " + computer_brand + " ""computer")
 ######### Exercice 5 #########
 name="Tatiana"
 age=20
-shoe_size="XL"
-info="je suis"" "+name+" " "j'ai"" ",age,"ans et ma pointure est"" "+shoe_size
+shoe_size="40"
+info="je suis"" "+name+" ""j'ai" " ",age,"ans et ma pointure est"" ",shoe_size
 print(info)
 
 ######### Exercice 6 #########
@@ -47,7 +47,7 @@ if n==myname:
 else:
       print("nous n'avons pas les meme nom")
 
-######### Exercice 8 #########
+######### Exercice 9 #########
 m=float(input("Entrer votre taille" ""))
 if m<145:
       print('Vous devez grandir un peu plus pour rouler')
