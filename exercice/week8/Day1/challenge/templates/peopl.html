@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Liste des personnes</h1>
+    <table>
+        <tr>
+            <td>id</td>
+            <td>name</td>
+            <td>age</td>
+            <td>country</td>
+            <td>detail</td>
+        </tr>
+        {% for values in people %}
+        <tr>
+            <td>{{values.id}}</td>
+            <td>{{values.name}}</td>
+            <td>{{values.age}}</td>
+            <td>{{values.country}}</td>
+            
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
