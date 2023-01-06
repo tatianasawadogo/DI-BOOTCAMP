@@ -15,3 +15,14 @@ for i in a:
     t=t+i
     print(t)
 
+print("************** 4 Bonus ***************")
+from random import shuffle
+# t = x
+b = []
+for j in x:
+    b.append(j)
+shuffle(b)
+c = ""
+for z in b:
+    c = c + z
+print(c)
