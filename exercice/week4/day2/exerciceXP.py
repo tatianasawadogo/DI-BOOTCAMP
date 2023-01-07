@@ -1,5 +1,5 @@
 #####################################Exercice1##############################
-Créez un ensemble appelé my_fav_numbers avec tous vos numéros favoris.
+# Créez un ensemble appelé my_fav_numbers avec tous vos numéros favoris.
 my_fav_numbers= {16, 15, 17, 14, 18}
 #Ajoutez deux nouveaux numéros à l'ensemble
 my_fav_numbers.add(19)
@@ -77,10 +77,43 @@ garniture  =  ""
 serie  =  "" 
 prix  =  0 ; 
 while  garniture . lower ()  !=  "quitter"  : 
-    garniture  =  input ( "Entrez une serie de garnitures de pizza" ) 
+    garniture  =  input ( "Entrez une serie de garnitures de pizza:" " ") 
     if  garniture . lower ()  !=  "quitter"  : 
         print ( "Nous ajouterons cette garniture" ) 
         serie  +=  garniture  +  " " 
     prix  +=  12.5 
 
 print ( serie , " Et le prix total est :" , prix )
+
+######################################Exercice9###########################
+age = input("Entrez l'âge de la 1 ère personne")
+prix = 0
+while age.lower() != "fin" :
+    if int(age) < 3 :
+        prix = 0
+    elif int(age) <= 12 :
+        prix += 10
+    else :
+        prix += 15
+    age = input("Entrez l'âge d'une autre personne ou 'fin' pour avoir le prix total :")
+print(prix)
+
+######################################Exercice10###########################
+sandwich_orders = ["Tuna sandwich", "Avocado sandwich", "Egg sandwich", "Sabih sandwich", "Pastrami sandwich"]
+# creation of empty list
+finished_sandwiches = []
+# create "p" which will allow us to determine the exact number of sandwiches prepared
+n = 0
+# remove ready-made sandwiches
+while sandwich_orders !=[]:
+    ajout =input("What sandwich did you finish making?")
+    if ajout in sandwich_orders:
+        sandwich_orders.remove(ajout)
+        finished_sandwiches.append(ajout)
+        n = n + 1
+
+# Print the ready-made sandwiches
+for i in range(0, n):
+    print("I made your ",finished_sandwiches[i])
+
+
